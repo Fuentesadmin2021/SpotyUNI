@@ -130,9 +130,19 @@ class SpotyUNI(QtWidgets.QMainWindow):
 				self.ui.progressBar.setValue(0)
 				valor = self.know_time()
 				self.timer.start(int(valor / 100), self)
-				# if self.timer.isActive():
-				# 	self.ui.textLabel.setVisible(True)
-				# 	self.animationText(self.know_text())
+				if self.timer.isActive():
+					cadena = self.know_text()
+					# self.ui.label_2.setGeometry(QtCore.QRect(0, 550, 600, 25))
+					self.ui.label_2.setVisible(True)
+					self.ui.label_2.setText(cadena)
+
+
+	def know_text(self):
+		nombre, interprete, genero, album = (cancion[index][1:5])
+		cadena2 = '* {} * {} * {} * {} *'.format(nombre, interprete, genero, album)
+		return str(cadena2)
+
+
 
 	def timerEvent(self, event):
 		if self.step >= 100:
@@ -160,7 +170,8 @@ class SpotyUNI(QtWidgets.QMainWindow):
 		self.timer.stop()
 		self.step = 0
 		self.ui.progressBar.setValue(0)
-	
+		self.ui.label_2.hide()
+
 
 	def control_volumen(self):
 		value = self.ui.volumen.value()
