@@ -1,9 +1,11 @@
 import sys
-from SpotyUNI import *
+from SpotyUNIF import *
 from PySide2 import QtCore
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import QPropertyAnimation # paquete necesario para crear el menu lateral desplegable
 from PySide2 import QtCore, QtGui, QtWidgets
+from pygame import mixer
+
 
 
 class SpotyUNI(QMainWindow):
@@ -38,10 +40,41 @@ class SpotyUNI(QMainWindow):
 		self.ui.bt_maximizar.clicked.connect(self.control_bt_maximizar)
 		self.ui.bt_cerrar.clicked.connect(lambda: self.close())
 
+		#control barra de reprodcucción
+		# self.ui.bt_canciones_2.cliked.connect(self.no_exite)
+		self.ui.bt_reproducir.clicked.connect(self.control_bt_reproducir)		
+		self.ui.bt_pausar.clicked.connect(self.control_bt_pausar)
+		self.ui.bt_reanudar.clicked.connect(self.control_bt_reanudar)
+		self.ui.bt_detener.clicked.connect(self.control_bt_detener)
+		self.ui.volumen.valueChanged.connect(self.control_volumen)
+		
+
 		self.ui.bt_ocultar.hide()
 
 		#menu lateral
 		self.ui.bt_menu.clicked.connect(self.mover_menu)
+
+	def control_bt_reproducir(self):
+		mixer.init()
+		mixer.music.load("C:\SpotyUN\Canciones//never_gonna_give_you_up.mp3")
+		mixer.music.play()
+
+	def control_bt_pausar(self):
+		mixer.music.pause()
+
+	def control_bt_reanudar(self):
+		mixer.music.unpause()
+
+	def control_bt_detener(self):
+		mixer.music.stop()
+
+
+	def control_volumen(self):
+		value = self.ui.volumen.value()
+		mixer.music.set_volume(value/100)	
+
+
+	# -------------------------------------------------------------
 
 	def control_bt_ocultar(self):
 		self.showMinimized()		

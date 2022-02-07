@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'SpotyUNIsyhsxP.ui'
+## Form generated from reading UI file 'SpotyUNIeiubXk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -211,7 +211,7 @@ class Ui_MainWindow(object):
         self.bt_canciones.setFont(font2)
         self.bt_canciones.setLayoutDirection(Qt.LeftToRight)
         icon6 = QIcon()
-        icon6.addFile(u"canciones.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u"musica.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_canciones.setIcon(icon6)
         self.bt_canciones.setIconSize(QSize(32, 32))
 
@@ -307,21 +307,84 @@ class Ui_MainWindow(object):
         self.page_inicio.setObjectName(u"page_inicio")
         self.verticalLayout_7 = QVBoxLayout(self.page_inicio)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
-        self.pushButton_2 = QPushButton(self.page_inicio)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.label = QLabel(self.page_inicio)
+        self.label.setObjectName(u"label")
 
-        self.verticalLayout_7.addWidget(self.pushButton_2)
+        self.verticalLayout_7.addWidget(self.label)
 
         self.stackedWidget.addWidget(self.page_inicio)
         self.page = QWidget()
         self.page.setObjectName(u"page")
-        self.verticalLayout_4 = QVBoxLayout(self.page)
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.p_clientes = QPushButton(self.page)
-        self.p_clientes.setObjectName(u"p_clientes")
-        self.p_clientes.setStyleSheet(u"background-color:rgb(0, 0, 255)")
+        self.gridLayout = QGridLayout(self.page)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.bt_canciones_2 = QPushButton(self.page)
+        self.bt_canciones_2.setObjectName(u"bt_canciones_2")
+        icon11 = QIcon()
+        icon11.addFile(u"buscarc.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.bt_canciones_2.setIcon(icon11)
+        self.bt_canciones_2.setIconSize(QSize(28, 28))
 
-        self.verticalLayout_4.addWidget(self.p_clientes)
+        self.gridLayout.addWidget(self.bt_canciones_2, 1, 1, 1, 1)
+
+        self.tableView = QTableView(self.page)
+        self.tableView.setObjectName(u"tableView")
+
+        self.gridLayout.addWidget(self.tableView, 0, 0, 1, 9)
+
+        self.bt_reproducir = QPushButton(self.page)
+        self.bt_reproducir.setObjectName(u"bt_reproducir")
+        self.bt_reproducir.setIcon(icon10)
+        self.bt_reproducir.setIconSize(QSize(28, 28))
+
+        self.gridLayout.addWidget(self.bt_reproducir, 1, 2, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(235, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer_3, 1, 8, 1, 1)
+
+        self.bt_pausar = QPushButton(self.page)
+        self.bt_pausar.setObjectName(u"bt_pausar")
+        icon12 = QIcon()
+        icon12.addFile(u"pausar.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.bt_pausar.setIcon(icon12)
+        self.bt_pausar.setIconSize(QSize(28, 28))
+
+        self.gridLayout.addWidget(self.bt_pausar, 1, 3, 1, 1)
+
+        self.bt_reanudar = QPushButton(self.page)
+        self.bt_reanudar.setObjectName(u"bt_reanudar")
+        icon13 = QIcon()
+        icon13.addFile(u"reanudar.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.bt_reanudar.setIcon(icon13)
+        self.bt_reanudar.setIconSize(QSize(28, 28))
+
+        self.gridLayout.addWidget(self.bt_reanudar, 1, 4, 1, 1)
+
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer_2, 1, 0, 1, 1)
+
+        self.bt_detener = QPushButton(self.page)
+        self.bt_detener.setObjectName(u"bt_detener")
+        icon14 = QIcon()
+        icon14.addFile(u"detener.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.bt_detener.setIcon(icon14)
+        self.bt_detener.setIconSize(QSize(28, 28))
+
+        self.gridLayout.addWidget(self.bt_detener, 1, 5, 1, 1)
+
+        self.volumen = QSlider(self.page)
+        self.volumen.setObjectName(u"volumen")
+        self.volumen.setMinimumSize(QSize(0, 25))
+        self.volumen.setStyleSheet(u"background:qlineargradient(spread:pad, x1:0.0695224, y1:0.943, x2:0.825871, y2:0.745, stop:0.00497512 rgba(255, 255, 255, 255), stop:1 rgba(73, 69, 255, 255))")
+        self.volumen.setOrientation(Qt.Horizontal)
+        self.volumen.setTickInterval(10)
+        self.volumen.setMinimum(0)
+        self.volumen.setMaximum(100)
+
+
+
+        self.gridLayout.addWidget(self.volumen, 1, 6, 1, 1)
 
         self.stackedWidget.addWidget(self.page)
         self.page_1 = QWidget()
@@ -339,11 +402,11 @@ class Ui_MainWindow(object):
         self.page_2.setObjectName(u"page_2")
         self.verticalLayout_3 = QVBoxLayout(self.page_2)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.p_clientes_2 = QPushButton(self.page_2)
-        self.p_clientes_2.setObjectName(u"p_clientes_2")
-        self.p_clientes_2.setStyleSheet(u"background-color:rgb(0, 255, 255)")
+        self.p_clientes = QPushButton(self.page_2)
+        self.p_clientes.setObjectName(u"p_clientes")
+        self.p_clientes.setStyleSheet(u"background-color:rgb(0, 255, 255)")
 
-        self.verticalLayout_3.addWidget(self.p_clientes_2)
+        self.verticalLayout_3.addWidget(self.p_clientes)
 
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QWidget()
@@ -381,7 +444,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -401,10 +464,18 @@ class Ui_MainWindow(object):
         self.bt_pp_cliente.setText(QCoreApplication.translate("MainWindow", u"PLANES CLIENTE     ", None))
         self.bt_listas.setText(QCoreApplication.translate("MainWindow", u"  MI LISTA", None))
         self.label_program.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-style:italic; color:#000000; vertical-align:super;\">SpotyUN</span></p></body></html>", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Inicio", None))
-        self.p_clientes.setText(QCoreApplication.translate("MainWindow", u"Consultar", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Tempor voluptate ullamco consectetur magna sunt duis sint qui non anim elit. Amet officia laboris minim elit qui ad Lorem quis laborum consequat id in eu deserunt. Nisi aute cupidatat culpa aute deserunt pariatur.\n"
+"\n"
+"Pariatur cillum culpa nostrud proident quis id reprehenderit eu aute voluptate. Ullamco sunt occaecat nisi exercitation culpa enim in non dolor. Dolore aliqua aliqua mollit laboris voluptate.", None))
+        
+        self.label.setWordWrap(True)
+        self.bt_canciones_2.setText("")
+        self.bt_reproducir.setText("")
+        self.bt_pausar.setText("")
+        self.bt_reanudar.setText("")
+        self.bt_detener.setText("")
         self.p_planes.setText(QCoreApplication.translate("MainWindow", u"Planes", None))
-        self.p_clientes_2.setText(QCoreApplication.translate("MainWindow", u"Cliente", None))
+        self.p_clientes.setText(QCoreApplication.translate("MainWindow", u"Cliente", None))
         self.p_pp_clientes.setText(QCoreApplication.translate("MainWindow", u"Planes cliente", None))
         self.p_listas.setText(QCoreApplication.translate("MainWindow", u"Mi lista", None))
     # retranslateUi
