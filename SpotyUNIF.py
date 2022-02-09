@@ -61,7 +61,7 @@ class Ui_MainWindow(object):
 "background-color:rgb(255, 255, 255)\n"
 "}")
         icon = QIcon()
-        icon.addFile(u"menus.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"imagenes/menus.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_menu.setIcon(icon)
         self.bt_menu.setIconSize(QSize(32, 32))
 
@@ -84,7 +84,7 @@ class Ui_MainWindow(object):
 "background-color:rgb(0, 0, 255)\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u"ocultarp.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"imagenes/ocultarp.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_ocultar.setIcon(icon1)
         self.bt_ocultar.setIconSize(QSize(32, 32))
 
@@ -103,7 +103,7 @@ class Ui_MainWindow(object):
 "background-color:rgb(0, 0, 255)\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u"minimizarp.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"imagenes/minimizarp.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_minimizar.setIcon(icon2)
         self.bt_minimizar.setIconSize(QSize(32, 32))
 
@@ -122,7 +122,7 @@ class Ui_MainWindow(object):
 "background-color:rgb(0, 0, 255)\n"
 "}")
         icon3 = QIcon()
-        icon3.addFile(u"maximizarp.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"imagenes/maximizarp.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_maximizar.setIcon(icon3)
         self.bt_maximizar.setIconSize(QSize(32, 32))
 
@@ -141,7 +141,7 @@ class Ui_MainWindow(object):
 "background-color:rgb(165, 0, 0)\n"
 "}")
         icon4 = QIcon()
-        icon4.addFile(u"cerrarp.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"imagenes/cerrarp.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_cerrar.setIcon(icon4)
         self.bt_cerrar.setIconSize(QSize(32, 32))
 
@@ -197,7 +197,7 @@ class Ui_MainWindow(object):
         self.bt_inicio.setFont(font1)
         self.bt_inicio.setLayoutDirection(Qt.LeftToRight)
         icon5 = QIcon()
-        icon5.addFile(u"Inicio.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"imagenes/Inicio.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_inicio.setIcon(icon5)
         self.bt_inicio.setIconSize(QSize(32, 32))
 
@@ -217,7 +217,7 @@ class Ui_MainWindow(object):
         self.bt_canciones.setFont(font2)
         self.bt_canciones.setLayoutDirection(Qt.RightToLeft)
         icon6 = QIcon()
-        icon6.addFile(u"musica.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u"imagenes/musica.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_canciones.setIcon(icon6)
         self.bt_canciones.setIconSize(QSize(32, 32))
 
@@ -234,7 +234,7 @@ class Ui_MainWindow(object):
         self.bt_planes.setLayoutDirection(Qt.LeftToRight)
         self.bt_planes.setAutoFillBackground(False)
         icon7 = QIcon()
-        icon7.addFile(u"coin.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u"imagenes/coin.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_planes.setIcon(icon7)
         self.bt_planes.setIconSize(QSize(32, 32))
 
@@ -246,7 +246,7 @@ class Ui_MainWindow(object):
         self.bt_cliente.setFont(font3)
         self.bt_cliente.setLayoutDirection(Qt.RightToLeft)
         icon8 = QIcon()
-        icon8.addFile(u"usuario.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon8.addFile(u"imagenes/usuario.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_cliente.setIcon(icon8)
         self.bt_cliente.setIconSize(QSize(32, 32))
 
@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
         self.bt_pp_cliente.setFont(font3)
         self.bt_pp_cliente.setLayoutDirection(Qt.LeftToRight)
         icon9 = QIcon()
-        icon9.addFile(u"mas.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon9.addFile(u"imagenes/mas.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_pp_cliente.setIcon(icon9)
         self.bt_pp_cliente.setIconSize(QSize(32, 32))
 
@@ -270,7 +270,7 @@ class Ui_MainWindow(object):
         self.bt_listas.setFont(font3)
         self.bt_listas.setLayoutDirection(Qt.RightToLeft)
         icon10 = QIcon()
-        icon10.addFile(u"play.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon10.addFile(u"imagenes/play.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_listas.setIcon(icon10)
         self.bt_listas.setIconSize(QSize(32, 32))
 
@@ -284,7 +284,7 @@ class Ui_MainWindow(object):
         self.label_program.setObjectName(u"label_program")
         self.label_program.setMinimumSize(QSize(0, 50))
         font4 = QFont()
-        font4.setFamily(u"Baskerville Old Face")
+        font4.setFamily(u"Baskerlle Old Face")
         font4.setPointSize(24)
         font4.setBold(False)
         font4.setWeight(50)
@@ -330,6 +330,7 @@ class Ui_MainWindow(object):
         self.frame_table.setMaximumSize(QSize(0, 16777215))
         self.frame_table.setFrameShape(QFrame.StyledPanel)
         self.frame_table.setFrameShadow(QFrame.Raised)
+#-----------
         self.verticalLayout_4 = QVBoxLayout(self.frame_table)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.table_canciones = QTableWidget(self.frame_table)
@@ -347,7 +348,7 @@ class Ui_MainWindow(object):
 
         self.label_2 = QLabel(self.frame_table)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet("color: black; font-size: 12px;")
+        self.label_2.setStyleSheet("color: black; font-size: 20px;")
         self.label_2.setAlignment(Qt.AlignCenter)
         self.label_2.hide()
 
@@ -369,7 +370,7 @@ class Ui_MainWindow(object):
         self.bt_canciones_2 = QPushButton(self.frame_botones)
         self.bt_canciones_2.setObjectName(u"bt_canciones_2")
         icon11 = QIcon()
-        icon11.addFile(u"buscarc.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon11.addFile(u"imagenes/buscarc.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_canciones_2.setIcon(icon11)
         self.bt_canciones_2.setIconSize(QSize(28, 28))
 
@@ -385,7 +386,7 @@ class Ui_MainWindow(object):
         self.bt_pausar = QPushButton(self.frame_botones)
         self.bt_pausar.setObjectName(u"bt_pausar")
         icon12 = QIcon()
-        icon12.addFile(u"pausar.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon12.addFile(u"imagenes/pausar.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_pausar.setIcon(icon12)
         self.bt_pausar.setIconSize(QSize(28, 28))
 
@@ -394,7 +395,7 @@ class Ui_MainWindow(object):
         self.bt_detener = QPushButton(self.frame_botones)
         self.bt_detener.setObjectName(u"bt_detener")
         icon13 = QIcon()
-        icon13.addFile(u"detener.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon13.addFile(u"imagenes/detener.png", QSize(), QIcon.Normal, QIcon.Off)
         self.bt_detener.setIcon(icon13)
         self.bt_detener.setIconSize(QSize(28, 28))
 
